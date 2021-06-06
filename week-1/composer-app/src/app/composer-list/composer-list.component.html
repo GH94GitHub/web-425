@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Full name</th>
+      <th scope="col">Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let composer of composers">
+      <th scope="row">{{ composers.indexOf(composer) + 1 }}</th>
+      <td>{{ composer.fullName}}</td>
+      <td>{{ composer.genre }}</td>
+    </tr>
+  </tbody>
+</table>
