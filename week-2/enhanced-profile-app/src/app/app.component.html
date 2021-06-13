@@ -20,7 +20,8 @@
 
 <div class="container" role="main">
   <h2>{{assignment}}</h2>
-  <div class="row m-5">
+
+  <div class="row m-5" *ngIf='isLoggedIn; else showError'>
     <div class="col-6">
       <app-my-image></app-my-image>
     </div>
@@ -28,4 +29,11 @@
       <app-my-details></app-my-details>
     </div>
   </div>
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-12 alert-danger ">
+        You are not authorized to view this content.
+      </div>
+    </div>
+  </ng-template>
 </div>
