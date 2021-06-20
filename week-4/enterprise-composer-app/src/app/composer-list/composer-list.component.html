@@ -1,0 +1,25 @@
+<!--===========================
+; Title: Composer List Component HTML
+; Author: George Henderson
+; Date: 20 June 2021
+; Description: Contains HTML for Composer List Component.
+;===========================-->
+
+
+<input type="text" class="float-end" style="width: 30%; margin-bottom: 5px" placeholder="Filter by name" [formControl]="txtSearchControl">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Full name</th>
+      <th scope="col">Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let composer of composers | async">
+      <td><a routerLink="/composer-details/{{composer.composerId}}">{{composer.composerId }}</a></td>
+      <td>{{ composer.fullName}}</td>
+      <td>{{ composer.genre }}</td>
+    </tr>
+  </tbody>
+</table>
