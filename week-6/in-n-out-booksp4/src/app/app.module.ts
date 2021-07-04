@@ -23,6 +23,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule} from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { WishlistCreatComponent } from './wishlist-creat/wishlist-creat.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,9 @@ import { BookDetailsDialogComponent } from './book-details-dialog/book-details-d
     AboutComponent,
     ContactComponent,
     BookListComponent,
-    BookDetailsDialogComponent
+    BookDetailsDialogComponent,
+    WishlistComponent,
+    WishlistCreatComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,10 @@ import { BookDetailsDialogComponent } from './book-details-dialog/book-details-d
     FlexLayoutModule,
     MatIconModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
