@@ -1,3 +1,10 @@
+/*============================
+; Title: App-Routing Class File
+; Author: George Henderson
+; Date: 04 July 2021
+; Description: Contains route info for the app.
+;============================*/
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';

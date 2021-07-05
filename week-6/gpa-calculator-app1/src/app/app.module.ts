@@ -1,3 +1,10 @@
+/*============================
+; Title: App meta-data
+; Author: George Henderson
+; Date: 04 July 2021
+; Description: Contains implementation logic for the the app.
+;============================*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

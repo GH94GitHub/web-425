@@ -1,3 +1,10 @@
+/*============================
+; Title: Grade-Summary Component Class File
+; Author: George Henderson
+; Date: 04 July 2021
+; Description: Contains data for the Grade-Summary component.
+;============================*/
+
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
