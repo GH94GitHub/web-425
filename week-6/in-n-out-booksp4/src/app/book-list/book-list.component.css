@@ -1,3 +1,10 @@
+/*---------------------------------------
+; Title: Book-List Styles
+; Author: Professor Krasso
+; Date: 04 July 2021
+; Description: Contains the styles for the Book-List Component
+;---------------------------------------*/
+
 .a-link {
   text-decoration: none;
   cursor: pointer;

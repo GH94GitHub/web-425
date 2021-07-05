@@ -1,3 +1,10 @@
+/*===============================
+; Title: Wishlist Component Class File
+; Date: 04 July 2021
+; Author: George Henderson
+; Description: Contains data for the Wishlist Component.
+;===============================*/
+
 import { Component, OnInit } from '@angular/core';
 import { IWishlistItem } from '../IWishlistItem.interface';
 
